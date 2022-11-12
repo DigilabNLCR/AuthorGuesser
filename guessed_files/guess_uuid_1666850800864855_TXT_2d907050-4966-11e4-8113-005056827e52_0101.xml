@@ -1,0 +1,358 @@
+<info>
+	<guessed_author>V. Hálek</guessed_author>
+	<guessed_author_ID>a-21</guessed_author_ID>
+	<original_filename>TXT_2d907050-4966-11e4-8113-005056827e52_0101.txt</original_filename>
+	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
+	<date>2022-10-27</date>
+</info>
+<s>
+		<token>﻿</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>se</token>
+		<token>POS_ADV</token>
+		<token>Jiří</token>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>s</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_NOUN</token>
+		<token>jeho</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>POS_ADJ</token>
+		<token>než</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADJ</token>
+		<token>jeho</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_ADV</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>on</token>
+		<token>POS_ADV</token>
+		<token>o</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>v</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>on</token>
+		<token>až</token>
+		<token>z</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>ty</token>
+		<token>POS_VERB</token>
+		<token>před</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>Grosserová</token>
+		<token>být</token>
+		<token>jako</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>kdo</token>
+		<token>ty</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>POS_VERB</token>
+		<token>POS_ADV</token>
+		<token>s</token>
+		<token>já</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>ty</token>
+		<token>POS_VERB</token>
+		<token>před</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>být</token>
+		<token>v</token>
+		<token>jeho</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>se</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>já</token>
+		<token>msd="</token>
+		<token>který</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>já</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>neboť</token>
+		<token>můj</token>
+		<token>POS_NOUN</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>nad</token>
+		<token>POS_NOUN</token>
+		<token>svůj</token>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>já</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>POS_ADV</token>
+		<token>bud</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>s</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>do</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>к</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>svůj</token>
+		<token>•</token>
+		<token>msd="</token>
+		<token>a</token>
+		<token>můj</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>můj</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>li</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>on</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>on</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>ale</token>
+		<token>POS_ADV</token>
+		<token>se</token>
+		<token>na</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>kdo</token>
+		<token>POS_VERB</token>
+		<token>к</token>
+		<token>ty</token>
+		<token>msd="</token>
+		<token>až</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>co</token>
+		<token>být</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>se</token>
+		<token>na</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>já</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>a</token>
+		<token>jestli</token>
+		<token>ty</token>
+		<token>na</token>
+		<token>ten</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>být</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>já</token>
+		<token>ty</token>
+		<token>POS_VERB</token>
+		<token>к</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>nuž</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>já</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>Hálek</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>POS_NUM</token>
+		<token>msd="</token>
+		<token>POS_NUM</token>
+</s>
+
+<original_string>﻿„Elemente!“ rozkřikl se pojednou Jiří a vyskočil se židle. Postava jeho se zpřímila, že se zdál být vyšší než obyčejně. Kostnatá jeho ruka mačkala křečovitě hůl, a uhodiv jí nerázně o zem, zahořel v tváři, že mu až z očí sršel plamen. „Chcete, abych vám držel před očima zrcadlo?“ Paní Grosserová byla jako omráčena. „Pane, kdo vás oprávnil, abyste směl mluvit takto se mnou ? “ „Elemente ! Chcete, abych vám držel před očima zrcadlo ?“ „Žádám paní hraběnku, aby povážila, že jsem v jejím domě, kde se mně ubližuje!“ „Ohni boží! Myslíte, že mne zaleknete? Mne, který se nebojím člověka na světě? — Na svět, sem, boží bojovníci a tvořte nám nové ženy ! Neboť naše matky se zapomněly nad plodem svým a nemají srdce, aby národu odchovaly syny. Bože, dej nám matky a pak budem národ ! S božími bojovníky táhly matky do boje, láskou к národu kojily nemluvňátka svá •— a naše matky ? Můj bože, dlouho-li nás chceš trestat!“ „Pane, žádám zadostučinění !“ „Chcete je? Máte je mít! Ale dříve se na mne podívejte, dobře podívejte, abyste věděla, kdo mluví к vám, až uslyšíte, co jest hřích ! Dobře se na mne podívejte, abyste mne znala ! A jestli vám na tom záleží, abyste byla známější, vzácná paní — já vám mohu к známosti dopomoct. Nuž, znáte mne, paní vážená?“ Hálek, Spisy III. 7</original_string>
