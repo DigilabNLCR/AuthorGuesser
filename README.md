@@ -49,3 +49,27 @@ author_to_id = {'A. Stašek': 'a-01',
 ## Training new models
 - In the directory "training", you can find a script that facilitates trainning of the models, but for that you need also some delexicalized dataset... the script for the creation of a delexicalized dataset will be published later.
 - For now, this is only for you to see the process of training.
+
+## **Roles**
+
+* **František Válek** - *principal programmer*
+* **Jan Hajič** - *principal programmer, experiment design*
+
+* **Zdenko Vozár** -  *project lead, solution conception*
+* **Martin Holub** -  *statistical and mathematical conception*
+* **Michal Charypar** -  *data background*
+* **Jiří Szromek** -  *supporting programmer*
+* **Petra Habetinova** -  *supporting programmer*
+
+
+## **More**
+More information about project implementation: https://github.com/DigilabNLCR/AuthorshipAttributionLine
+
+# Dedication
+National Library of the Czech Republic
+
+_Realized with the support of institutional research of National Library of the Czech Republic funded by Ministry of Culture of the Czech Republic as part of the framework of Longterm conception developement of scientific organization._
+
+Národní knihovna České Republiky
+
+_Realizováno v rámci institucionálního výzkumu Národní knihovny České republiky financovaného Ministerstvem kultury ČR v rámci Dlouhodobého koncepčního rozvoje výzkumné organizace._
