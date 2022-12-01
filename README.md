@@ -57,7 +57,7 @@ author_to_id = {'A. Stašek': 'a-01',
 
 * **Zdenko Vozár** -  *project lead, solution conception*
 * **Martin Holub** -  *statistical and mathematical conception*
-* **Michal Charypar** -  *data background*
+* **Michal Charypar** -  *dataset proposal, literary history background*
 * **Jiří Szromek** -  *supporting programmer*
 * **Petra Habetinova** -  *supporting programmer*
 
