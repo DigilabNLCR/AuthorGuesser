@@ -54,12 +54,9 @@ author_to_id = {'A. Stašek': 'a-01',
 
 * **František Válek** - *principal programmer*
 * **Jan Hajič** - *principal programmer, experiment design*
-
-* **Zdenko Vozár** -  *project lead, solution conception*
-* **Martin Holub** -  *statistical and mathematical conception*
-* **Michal Charypar** -  *dataset proposal, literary history background*
 * **Jiří Szromek** -  *supporting programmer*
-* **Petra Habetinova** -  *supporting programmer*
+* **Martin Holub** -  *statistical and mathematical conception*
+* **Zdenko Vozár** -  *project lead, solution conception*
 
 
 ## **More**
