@@ -56,7 +56,7 @@ author_to_id = {'A. Stašek': 'a-01',
 * **Jan Hajič** - *principal programmer, experiment design*
 * **Jiří Szromek** -  *supporting programmer*
 * **Martin Holub** -  *statistical and mathematical conception*
-* **Zdenko Vozár** -  *project lead, solution conception*
+* **Zdenko Vozár** -  *project lead, solution conception and supervision*
 
 
 ## **More**
