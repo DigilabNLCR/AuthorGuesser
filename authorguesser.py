@@ -9,21 +9,13 @@ import joblib
 import re
 from datetime import datetime
 import time
+import json
+import argparse
 
-version = '0.0.2'
+version = '0.0.3'
 authors = ['František Válek', 'Jan Hajič', 'Jiří Szromek', 'Martin Holub' 'Zdenko Vozár']
 project_name = 'DigiLab NK ČR'
 project_web = 'https://digilab.nkp.cz/'
-
-
-""" SOME GENERAL OBJECTS -------------------------------------------------------- """
-
-
-ROOT_PATH = os.getcwd()
-
-TEXT_TO_GUESS_PATH = os.path.join(ROOT_PATH, 'texts_to_guess')
-MODELS_PATH = os.path.join(ROOT_PATH, 'models')
-GUESSED_PATH = os.path.join(ROOT_PATH, 'guessed_files')
 
 
 author_to_id = {'A. Stašek': 'a-01',
@@ -74,6 +66,25 @@ id_to_author = {'a-01': 'A. Stašek',
                 'a-22': 'V. Vančura', 
                 'a-23': 'Z. Winter'}
 
+""" ARGUMENTS ------------------------------------------------------------------- """
+def build_argument_parser():
+    parser = argparse.ArgumentParser(description=__doc__, add_help=True,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+
+    """ Models and data paths """
+    parser.add_argument('-m', '--models_path', action='store', required=False,
+                        help='Path to directory where models are be stored.')
+
+    parser.add_argument('-i', '--input_path', action='store', required=False,
+                        help='Path to directory where TXT files to be guessed are stored.')
+
+    parser.add_argument('-o', '--output_path', action='store', required=False,
+                        help='Path to directory where guessed data should be stored.')
+    
+    parser.add_argument('-d', '--delete_input', action='store', required=False,
+                        help='Should input be deleted? y/n')
+
+    return parser
 
 """ PROCESSING INPUT TEXT ------------------------------------------------------- """
 
@@ -483,13 +494,21 @@ def guess_file(input_filename:str, models_path:str):
 
     guessed_auhtor = id_to_author[guessed_auhtor_id]
     print(f'\tThe guessed author of {input_filename} is: {guessed_auhtor}')
+    date_of_guess = datetime.today().strftime("%Y-%m-%d")
 
-    XML_guessed = f'<info>\n\t<guessed_author>{guessed_auhtor}</guessed_author>\n\t<guessed_author_ID>{guessed_auhtor_id}</guessed_author_ID>\n\t<original_filename>{input_filename}</original_filename>\n\t<model_used>{model_to_run}</model_used>\n\t<date>{datetime.today().strftime("%Y-%m-%d")}</date>\n</info>\n' + delexicalized_data + f'\n<original_string>{connected_input}</original_string>\n'
+    XML_guessed = f'<info>\n\t<guessed_author>{guessed_auhtor}</guessed_author>\n\t<guessed_author_ID>{guessed_auhtor_id}</guessed_author_ID>\n\t<original_filename>{input_filename}</original_filename>\n\t<model_used>{model_to_run}</model_used>\n\t<date>{date_of_guess}</date>\n</info>\n' + delexicalized_data + f'\n<original_string>{connected_input}</original_string>\n'
 
-    return guessed_auhtor, XML_guessed
+    JSON_entry = {'guessed_author': guessed_auhtor,
+                  'guessed_author_ID': guessed_auhtor_id,
+                  'original_filename': input_filename,
+                  'model_used': model_to_run,
+                  'date': date_of_guess,
+                  'associated_XML': ''}
+
+    return guessed_auhtor, XML_guessed, JSON_entry
 
 
-def guess_all_files(input_path=TEXT_TO_GUESS_PATH, output_path=GUESSED_PATH,  models_path=MODELS_PATH, remove_original=False):
+def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_original=False):
     """ The main function that executes the guess all files in a given path. """
     files_to_guess = os.listdir(input_path)
 
@@ -504,13 +523,33 @@ def guess_all_files(input_path=TEXT_TO_GUESS_PATH, output_path=GUESSED_PATH,  mo
 
     for file_to_guess in files_to_guess:
         print('GUESSING...', file_to_guess)
-        guessed_auhtor, XML_guessed = guess_file(input_filename=file_to_guess, models_path=models_path)
+        guessed_auhtor, XML_guessed, JSON_entry = guess_file(input_filename=file_to_guess, models_path=models_path)
 
+        # Save the results into a XML file
         guessed_filename = f'guess_uuid_{str(time.time()).replace(".", "")}_{file_to_guess[:-4]}.xml'
-
         with open(os.path.join(output_path, guessed_filename), 'w', encoding='utf-8') as guessed_file:
             guessed_file.write(XML_guessed)
             print('\tGuessed output saved as', guessed_filename)
+
+        # Save the results into JSON
+        JSON_filename = 'results.json'
+        JSON_entry['associated_XML'] = guessed_filename
+
+        if not os.path.exists(os.path.join(output_path, JSON_filename)):
+            evaluation_id = 0
+            with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
+                json.dump({'last_run_id': evaluation_id, evaluation_id: JSON_entry}, json_results_file)
+        else:
+            with open(os.path.join(output_path, JSON_filename), 'r', encoding='utf-8') as json_results_file:
+                json_data = json.load(json_results_file)
+            
+            last_run_id = json_data['last_run_id']
+            current_run_id = last_run_id+1
+            json_data['last_run_id'] = current_run_id
+            json_data[current_run_id] = JSON_entry
+        
+            with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
+                json.dump(json_data, json_results_file, indent=4)  
 
         if remove_original:
             os.remove(os.path.join(input_path, file_to_guess))
@@ -518,6 +557,30 @@ def guess_all_files(input_path=TEXT_TO_GUESS_PATH, output_path=GUESSED_PATH,  mo
 
 
 if __name__ == '__main__':
-    guess_all_files(remove_original=True)
+    parser = build_argument_parser()
+    args = parser.parse_args()
 
-    # TODO: udělat to na argumenty.
+    ROOT_PATH = os.getcwd()
+
+    TEXT_TO_GUESS_PATH = os.path.join(ROOT_PATH, 'texts_to_guess')
+    MODELS_PATH = os.path.join(ROOT_PATH, 'models')
+    GUESSED_PATH = os.path.join(ROOT_PATH, 'guessed_files')
+
+    remove_originals = True
+
+    if args.models_path:
+        MODELS_PATH = args.models_path
+
+    if args.input_path:
+        TEXT_TO_GUESS_PATH = args.input_path
+
+    if args.output_path:
+        GUESSED_PATH = args.output_path
+
+    if args.delete_input:
+        if args.delete_input == 'y':
+            remove_originals = True
+        if args.delete_input == 'n':
+            remove_originals = False
+
+    guess_all_files(remove_original=remove_originals, models_path=MODELS_PATH, input_path=TEXT_TO_GUESS_PATH, output_path=GUESSED_PATH)

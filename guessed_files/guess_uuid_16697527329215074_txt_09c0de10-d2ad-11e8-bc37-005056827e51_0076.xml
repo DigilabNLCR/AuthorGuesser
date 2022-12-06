@@ -1,0 +1,325 @@
+<info>
+	<guessed_author>Č. Slepánek</guessed_author>
+	<guessed_author_ID>a-08</guessed_author_ID>
+	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0076.txt</original_filename>
+	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
+	<date>2022-11-29</date>
+</info>
+<s>
+		<token>POS_NOUN</token>
+</s>
+<s>
+		<token>být</token>
+		<token>ten</token>
+		<token>POS_ADV</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>když</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>POS_ADV</token>
+		<token>do</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>být</token>
+		<token>já</token>
+		<token>_</token>
+		<token>jakoby</token>
+		<token>být</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>z</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>se</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>být</token>
+		<token>u</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>o</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>až</token>
+		<token>POS_VERB</token>
+		<token>k</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>být</token>
+		<token>msd="</token>
+		<token>li</token>
+		<token>ten</token>
+		<token>u</token>
+		<token>on</token>
+		<token>takový</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>s</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>mnoz</token>
+		<token>prý</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>když</token>
+		<token>POS_VERB</token>
+		<token>к</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>prý</token>
+		<token>POS_VERB</token>
+		<token>se</token>
+		<token>v</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADJ</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>i</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>izvosčik</token>
+		<token>msd="</token>
+		<token>kolik</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>ovšem</token>
+		<token>že</token>
+		<token>v</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>v</token>
+		<token>POS_NOUN</token>
+		<token>ten</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>POS_ADV</token>
+		<token>tolik</token>
+		<token>msd="</token>
+		<token>kolik</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>za</token>
+		<token>tentýž</token>
+		<token>POS_NOUN</token>
+		<token>v</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>před</token>
+		<token>několik</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>svůj</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>POS_ADJ</token>
+		<token>na</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>nad</token>
+		<token>tenhle</token>
+		<token>a</token>
+		<token>POS_VERB</token>
+		<token>z</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>i</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>se</token>
+		<token>msd="</token>
+		<token>být</token>
+		<token>msd="</token>
+		<token>li</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>být</token>
+		<token>msd="</token>
+		<token>a</token>
+		<token>POS_ADV</token>
+		<token>ten</token>
+		<token>být</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>ač</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>že</token>
+		<token>být</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>o</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>nic</token>
+		<token>já</token>
+		<token>ten</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>prý</token>
+		<token>být</token>
+		<token>v</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>ale</token>
+		<token>on</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>neboť</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>on</token>
+		<token>POS_ADV</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>můj</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>na</token>
+		<token>on</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>nuž</token>
+		<token>co</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>_</token>
+		<token>aby</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NUM</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+
+<original_string>﻿Byla to nervově vysilující jízda a když jsme se dostali konečně do klidnějších ulic, bylo mi jakobych byl vyvázl z rozvášněné řeky. Najednou se povoz zastavil. „Jsme u nádraží?“ tázal jsem se. „Brzy budeme.“ „Tak proč zastavujete ?“ „Prosím o zaplacení!“ „Až dojedeme k nádraží.“ „Nejprve zaplaťte.“ Ptal jsem se okolostojících, je-li to u nich takový „usus“. Pokrčili s úsměvem rameny. Mnozi prý nezaplatí, když dojeli к nádraži. Nejlépe bude prý dohodnout se v dobrotě. Dobrá tedy. I otázal jsem se izvosčika, kolik žádá, ovšem že v neblahém tušení, že v dobrotě to už neskončí. A neklamal jsem se. Žádal třikráte tolik, kolik jsem zaplatil za tutéž dráhu v opačném směru před několika měsíci. Maje svoje peníze již dopodrobna rozvrženy na nevyhnutelné položky, rozpálil jsem se nad tímhle a vyskočil z povozu, i ohlížel jsem se, není-li na blízku strážník. Nebyl, a snad to bylo dobře. Ač jsem si hleděl naklonit přízeň okolostojících vylíčením právní podstaty sporu a zdůrazněním momentu, že jsem předem žádal o udání ceny, nic mi to nepomohlo. Krčili rameny. Prý jsem v právu, ale on též, neboť se dovolává taxy. Měl jsem ji zrovna na očích a můj izvosčik obrácenou násadou biče tloukl na ni škodolibě. Nuž co dělat, musil jsem povolit, abych se dostal na nádraží, vzdálené tři sta kroků.</original_string>

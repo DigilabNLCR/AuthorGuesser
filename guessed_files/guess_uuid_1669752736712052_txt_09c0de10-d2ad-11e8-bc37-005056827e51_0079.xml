@@ -1,0 +1,302 @@
+<info>
+	<guessed_author>Č. Slepánek</guessed_author>
+	<guessed_author_ID>a-08</guessed_author_ID>
+	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0079.txt</original_filename>
+	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
+	<date>2022-11-29</date>
+</info>
+<s>
+		<token>POS_VERB</token>
+		<token>POS_ADV</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>když</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>к</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>být</token>
+		<token>ten</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>neboť</token>
+		<token>být</token>
+		<token>POS_ADV</token>
+		<token>s</token>
+		<token>Petrohrad</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>z</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>ale</token>
+		<token>co</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>před</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>ten</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>jenž</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>po</token>
+		<token>všechen</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>z</token>
+		<token>jenž</token>
+		<token>POS_ADJ</token>
+		<token>být</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>v</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>na</token>
+		<token>on</token>
+		<token>POS_VERB</token>
+		<token>se</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>ten</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>jenž</token>
+		<token>být</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>za</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>POS_ADJ</token>
+		<token>a</token>
+		<token>proto</token>
+		<token>já</token>
+		<token>POS_ADV</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>jakmile</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>nějaký</token>
+		<token>POS_NOUN</token>
+		<token>do</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>já</token>
+		<token>jeho</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>až</token>
+		<token>být</token>
+		<token>on</token>
+		<token>POS_VERB</token>
+		<token>do</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>Trud“</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>nebo</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>být</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>za</token>
+		<token>ten</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>POS_ADJ</token>
+		<token>POS_VERB</token>
+		<token>se</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>a</token>
+		<token>na</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADV</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>ale</token>
+		<token>což</token>
+		<token>být</token>
+		<token>POS_VERB</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_VERB</token>
+		<token>ten</token>
+		<token>tolik</token>
+		<token>msd="</token>
+		<token>ach</token>
+		<token>tolik</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>z</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>POS_ADV</token>
+		<token>z</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>se</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>i</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>i</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>z</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>s</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>POS_VERB</token>
+		<token>POS_VERB</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>na</token>
+		<token>POS_ADJ</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>v</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>Trud“</token>
+		<token>POS_NOUN</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADV</token>
+		<token>být</token>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADV</token>
+		<token>POS_VERB</token>
+		<token>se</token>
+		<token>POS_ADV</token>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+		<token>POS_ADJ</token>
+		<token>msd="</token>
+</s>
+<s>
+		<token>POS_ADJ</token>
+		<token>POS_NOUN</token>
+</s>
+
+<original_string>Dyl už máj, když jsem se rozhodl к návratu. Nebylo to ostatně tak lehké rozhodnutí, neboť jsem již s Petrohradem nějak úzce srostl. Jednou dokonce jsem se vrátil z nádraží. Ale co si počít ? Jak zachránit knihy před rukou policie ? Ty knihy, jež jsem sháněl po všech knihkupectvích, z nichž mnohé jsem šťastně urval v poslední chvíli, kdy už na ně vztahovalo se policejní rámě, ty knihy, jež jsem si kupoval za cenu citelných strádáni a proto mně tak drahé. Jakmile jsem dostal nějaký rubl do ruky, pálilo mne jeho vlastnictví tak dlouho, až jsem jej zanesl do knihoskladu „Trud“ (Práce) nebo jinam, kde jsem byl znám. Za to pak často bylo nutno spokojit se na snídaní čajem, na oběd čajem a na večeři opět čajem. Ale což bylo lze odolat? Vycházelo toho tolik, ach tolik, odkudsi z neznáma, opravdu jakoby z podzemí. „Knigoizdatělstva“ se množila, vydávány překlady i původní díla, brožurky i knihy, polemiky, studie, vynášeny materiály z osvobozenského hnutí, řešeny otázky sociální, ethické, hospodářské, seznamováno s poměry zahraničními ; denníky povstávaly, měnily jména, zanikaly, rovněž „žurnály“ začaly tvořit pestrou mosaiku literární, týdenníky, čtrnáctidenníky, měsíčníky, věnované všemožným otázkám života. Na velikém prostředním stole v knihoskladě „Trud“ spousty novinek, kdykoli jsi tam přišel. Dokola tlačil se vždy malý zástup, vyhledávající, prohlížející. Vybrané věci</original_string>

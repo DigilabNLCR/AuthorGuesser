@@ -29,14 +29,26 @@ author_to_id = {'A. Stašek': 'a-01',
                 'Z. Winter': 'a-23'}
 
 ## How to use this script
+Gerenal info:
+- You can either use default settings that works with these directories:
+    - texts_to_guess
+    - models
+    - guessed_files
+- Or you can run the script with arguments modifying these parameters:
+    - -m = models path (default "models")
+    - -i = input path (default "text to guess")
+    - -o = output path (default "guessed_files")
+    - -d = delete input? (default True) set y/n --> if True, input files are deleted after guessing process
+
 1) Place texts you wish to guess into the directory "texts_to_guess".
     - Note that texts must be below 18 000 characters (10 standad pages). (Due to using UDPipe https://lindat.mff.cuni.cz/services/udpipe/ - we do not want to overload it; also, the models are trained on far shorter segments.)
     - Encoding must be UTF-8.
     - Texts can include headers, page numbers, footnotes etc. - these are clened by the script.
     - Texts can have hyphenated words at the end of the lines, the lines are connected by the script.
+    - The higher the number of words, the higher probability of a right guess
 2) Run authorguesser.py
     - The script has been built in Python 3.9.
-    - requirements for python packages: os, requests, joblib, re, datetime, time
+    - requirements for python packages: os, requests, joblib, re, datetime, time, json, argparse
     - The script prepares the file (cleaning, connecting lines...) and delexicalize it (using UDPipe). The delexicalization in this case means: part-of-speech tags for autosemantic words (nouns (NOUN), proper nouns (PROPN), adjectives (ADJ), verbs (VERB), adverbs (ADV), and numbers (NUM)), other words are lemmatized.
     - Model is selected according to the segment length (in tokens), and applied.
 3) Check for the results
@@ -45,6 +57,8 @@ author_to_id = {'A. Stašek': 'a-01',
         - basic info: guessed author, orginal filename, model used, etc.
         - delexicalized text
         - original string (cleaned and connected)
+    - Result are also save in "guessed_files" direcotry, JSON file 'results.json'
+        - only the basic info is presented in this file.
 
 ## Training new models
 - In the directory "training", you can find a script that facilitates trainning of the models, but for that you need also some delexicalized dataset... the script for the creation of a delexicalized dataset will be published later.

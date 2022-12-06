@@ -1,0 +1,67 @@
+{
+    "last_run_id": 7,
+    "0": {
+        "guessed_author": "K. Klostermann",
+        "guessed_author_ID": "a-04",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0072.txt",
+        "model_used": "r-08.s-100.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527268803313_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0072.xml"
+    },
+    "1": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0073.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527287705088_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0073.xml"
+    },
+    "2": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0074.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_166975273037112_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0074.xml"
+    },
+    "3": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0075.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527313741822_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0075.xml"
+    },
+    "4": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0076.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527329215074_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0076.xml"
+    },
+    "5": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0077.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527341069202_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0077.xml"
+    },
+    "6": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0078.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_16697527353899996_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0078.xml"
+    },
+    "7": {
+        "guessed_author": "\u010c. Slep\u00e1nek",
+        "guessed_author_ID": "a-08",
+        "original_filename": "txt_09c0de10-d2ad-11e8-bc37-005056827e51_0079.txt",
+        "model_used": "r-08.s-200.n-1,3.m-LinearSVC.c-.joblib",
+        "date": "2022-11-29",
+        "associated_XML": "guess_uuid_1669752736712052_txt_09c0de10-d2ad-11e8-bc37-005056827e51_0079.xml"
+    }
+}
