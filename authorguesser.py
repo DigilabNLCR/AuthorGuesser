@@ -12,7 +12,7 @@ import time
 import json
 import argparse
 
-version = '0.0.3'
+version = '2.0.0'
 authors = ['František Válek', 'Jan Hajič', 'Jiří Szromek', 'Martin Holub' 'Zdenko Vozár']
 project_name = 'DigiLab NK ČR'
 project_web = 'https://digilab.nkp.cz/'
