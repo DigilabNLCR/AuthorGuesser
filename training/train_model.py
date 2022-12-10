@@ -6,6 +6,7 @@ import re
 import os
 from sys import prefix
 import numpy as np
+import time
 
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -248,6 +249,7 @@ def train_model(args, a_list=None, b_list=None, pass_type_to_train_on='train'):
 
     for r in preprocessing_codes:
         for s in segmentations:
+            model_training_start = time.time()
             print('Training', r, s)
             files_to_process = get_relevant_files(r, s, os.listdir(args.data_path), b_list=b_list, a_list=a_list)
 
@@ -266,9 +268,13 @@ def train_model(args, a_list=None, b_list=None, pass_type_to_train_on='train'):
 
             dump(clf, os.path.join(args.models_path,
                                    f'{r}.{s}.n-{n_min},{n_max}.m-{model_name}.c-{args.model_configuration}.joblib'))
+            model_training_end = time.time()
+            print('\tmodel trained in', model_training_end-model_training_start, 'seconds')
 
 
 if __name__ == '__main__':
+    start = time.time()
+    
     parser = build_argument_parser()
     args = parser.parse_args()
 
@@ -294,3 +300,6 @@ if __name__ == '__main__':
         pass_type_to_train_on = 'train'
 
     train_model(args, b_list=b_list, a_list=a_list, pass_type_to_train_on=pass_type_to_train_on)
+
+    end = time.time()
+    print('Full time needed for training:', end-start, 'seconds')
