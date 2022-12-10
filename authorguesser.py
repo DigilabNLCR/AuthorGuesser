@@ -18,6 +18,27 @@ project_name = 'DigiLab NK ČR'
 project_web = 'https://digilab.nkp.cz/'
 
 
+class TimingLogger:
+
+    def __init__(self):
+        self.total_time = 0
+        self.preprocessing_time = 0
+        self.external_preprocessing_time = 0
+        self.prediction_time = 0
+
+        self._separator = ','
+
+    def __str__(self):
+        return self._separator.join(
+            [str(self.total_time),
+             str(self.preprocessing_time),
+             str(self.external_preprocessing_time),
+             str(self.prediction_time)])
+
+
+_TIMING = TimingLogger()
+
+
 author_to_id = {'A. Stašek': 'a-01',
                 'J. Neruda': 'a-02',
                 'J. Arbes': 'a-03',
@@ -83,6 +104,12 @@ def build_argument_parser():
     
     parser.add_argument('-d', '--delete_input', action='store', required=False,
                         help='Should input be deleted? y/n')
+
+    parser.add_arguemnt('-l', '--log', action='store', required=False,
+                        help='Log performance information into a CSV file. The columns'
+                             ' are: total time, time spent in preprocessing, time spent'
+                             ' in external services (UDPipe) during preprocessing, and'
+                             ' time spent in the classification model\'s prediction method.')
 
     return parser
 
@@ -190,9 +217,14 @@ def udpipe_text(input_text:str):
         'data': input_text
     }
 
+    _udpipe_start_time = time.time_ns()  # TIMING
+
     response = requests.post('http://lindat.mff.cuni.cz/services/udpipe/api/process', input_data)
 
     data = eval(response.text)
+
+    _udpipe_end_time = time.time_ns()  # TIMING
+    _TIMING.external_preprocessing_time += _udpipe_end_time - _udpipe_start_time  # TIMING
 
     return data["result"]
 
@@ -483,14 +515,24 @@ def select_model_file(list_of_models:list, s:int):
 
 def guess_file(input_filename:str, models_path:str):
     """ This function guesses the file in all of the relevant  """
+    _preprocessing_start_time = time.time_ns()  # TIMING
+
     delexicalized_data, connected_input = process_input_file(input_filename=input_filename)
+
+    _preprocessing_end_time = time.time_ns() # TIMING
+    _TIMING.preprocessing_time += _preprocessing_end_time - _preprocessing_start_time # TIMING
 
     # count of tokens is the same in all of the delexicalization versions, so we need to get the token count only once
     token_count = get_token_count(XML_data=delexicalized_data)
 
     model_to_run = select_model_file(list_of_models=os.listdir(models_path), s=token_count)
-    
+
+    _prediction_start_time = time.time_ns() # TIMING
+
     guessed_auhtor_id = guess_instance(model_filename=model_to_run, data_to_eval=delexicalized_data)
+
+    _prediction_end_time = time.time_ns() # TIMING
+    _TIMING.prediction_time += _prediction_end_time - _prediction_start_time # TIMING
 
     guessed_auhtor = id_to_author[guessed_auhtor_id]
     print(f'\tThe guessed author of {input_filename} is: {guessed_auhtor}')
@@ -557,6 +599,8 @@ def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_or
 
 
 if __name__ == '__main__':
+    _script_start = time.time()
+
     parser = build_argument_parser()
     args = parser.parse_args()
 
@@ -584,3 +628,11 @@ if __name__ == '__main__':
             remove_originals = False
 
     guess_all_files(remove_original=remove_originals, models_path=MODELS_PATH, input_path=TEXT_TO_GUESS_PATH, output_path=GUESSED_PATH)
+
+    _script_end = time.time()
+    _TIMING.total_time = _script_end - _script_start
+
+    if args.log:
+        LOG_PATH = args.log_path
+        with open(LOG_PATH, 'a') as log_fh:
+            log_fh.write(str(_TIMING) + '\n')
