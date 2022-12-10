@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from joblib import load, dump
 
 __author__ = "František Válek"
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 
 """
 Version description/updates:
@@ -272,7 +272,6 @@ if __name__ == '__main__':
     parser = build_argument_parser()
     args = parser.parse_args()
 
-    # TODO: tohle vlastně nevím co dělá a zda je to nutné --> optat se na to na příštím setkání.
     if args.verbose:
         logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
     if args.debug:

@@ -27,6 +27,7 @@ author_to_id = {'A. Stašek': 'a-01',
                 'V. Hálek': 'a-21',
                 'V. Vančura': 'a-22',
                 'Z. Winter': 'a-23'}
+- Further concordances for dataset are available in [dataset_concordances.ipynb](https://github.com/DigilabNLCR/AuthorGuesser/tree/main/training/dataset_concordances.ipynb)
 
 ## How to use this script
 Gerenal info:
@@ -61,8 +62,25 @@ Gerenal info:
         - only the basic info is presented in this file.
 
 ## Training new models
-- In the directory "training", you can find a script that facilitates trainning of the models, but for that you need also some delexicalized dataset... the script for the creation of a delexicalized dataset will be published later.
-- For now, this is only for you to see the process of training.
+- In the directory "training", you can find a script that facilitates trainning of the models
+- In addition to the scrip, you also need a dataset for training
+- to run the script, you need to provide following aguments:
+    - required arguments:
+        - -m = models_path; path to directory where models are to be stored
+        - -d = data_path; path to directory where all the delexicalized data are stored.
+        - -clf = model_name; model name as in the sklearn package, only some are available in this version.
+            - for this, we suggest to use LinearSVC
+        - -n = ngram_range; set ngram range, use both values even if they are the same; e.g., "1,2" or "2,2"
+            - for this, we suggest to use 1,3
+        - -c = model_configuration; write in model configuration just as you would in model settings, but do not use spaces; e.g., "C=1.0,gamma=0.001,kernel='rfb',seed=42"
+            - for this, we use empty command, as we use the models in their default settings.
+    - optional arguments:
+        - -a = author_ids; set list of author ids you wish to train, including the "a", like ["a-01", "a-02"]
+            - if not set, all authors are included
+        - -b = book_ids; set list of book ids, including the "b", like ["b-01", "b-02"]
+            - if not set, all books are included
+        - -p = passage_type; set type of passages to train on (all, train, devel, test), train is default.
+- example of training command which has been used to train models presented here (except for paths): py -3.9 train_model.py -m "C:\Users\NAME\authorguesser\models" -d "C:\Users\NAME\authorguesser\full_delexicalized_dataset_r-08" -clf LinearSVC -n "1,3" -c ""
 
 ## **Roles**
 
