@@ -105,7 +105,7 @@ def build_argument_parser():
     parser.add_argument('-d', '--delete_input', action='store', required=False,
                         help='Should input be deleted? y/n')
 
-    parser.add_arguemnt('-l', '--log', action='store', required=False,
+    parser.add_argument('-l', '--log', action='store', required=False,
                         help='Log performance information into a CSV file. The columns'
                              ' are: total time, time spent in preprocessing, time spent'
                              ' in external services (UDPipe) during preprocessing, and'
