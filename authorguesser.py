@@ -563,6 +563,7 @@ def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_or
     """ The main function that executes the guess all files in a given path. """
     files_to_guess = os.listdir(input_path)
 
+    files_to_skip = []
     # Test if there are any files over the limit of 18 000 characters (10 standard pages) and texts treir encoding of other that UTF-8
     print('Checking lengths and encodings...')
     for file_to_guess in files_to_guess:
@@ -571,8 +572,8 @@ def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_or
                 data_in_file = input_file.read()
                 len_of_input = len(data_in_file)
                 if len_of_input > 18000:
-                    print(f'ERROR! File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters.')
-                    return
+                    print(f'File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters. It will not be guessed.')
+                    files_to_skip.append(file_to_guess)
         except UnicodeDecodeError:
             with open(os.path.join(input_path, file_to_guess), 'rb') as source_file:
                 raw_data = source_file.read()
@@ -583,42 +584,45 @@ def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_or
                 data_in_file = input_file.read()
                 len_of_input = len(data_in_file)
                 if len_of_input > 18000:
-                    print(f'ERROR! File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters.')
-                    return
+                    print(f'File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters. It will not be guessed.')
+                    files_to_skip.append(file_to_guess)
 
     for file_to_guess in files_to_guess:
-        print('GUESSING...', file_to_guess)
-        guessed_auhtor, XML_guessed, JSON_entry = guess_file(input_filename=file_to_guess, models_path=models_path)
-
-        # Save the results into a XML file
-        guessed_filename = f'guess_uuid_{str(time.time()).replace(".", "")}_{file_to_guess[:-4]}.xml'
-        with open(os.path.join(output_path, guessed_filename), 'w', encoding='utf-8') as guessed_file:
-            guessed_file.write(XML_guessed)
-            print('\tGuessed output saved as', guessed_filename)
-
-        # Save the results into JSON
-        JSON_filename = 'results.json'
-        JSON_entry['associated_XML'] = guessed_filename
-
-        if not os.path.exists(os.path.join(output_path, JSON_filename)):
-            evaluation_id = 0
-            with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
-                json.dump({'last_run_id': evaluation_id, evaluation_id: JSON_entry}, json_results_file)
+        if file_to_guess in files_to_skip:
+            continue
         else:
-            with open(os.path.join(output_path, JSON_filename), 'r', encoding='utf-8') as json_results_file:
-                json_data = json.load(json_results_file)
-            
-            last_run_id = json_data['last_run_id']
-            current_run_id = last_run_id+1
-            json_data['last_run_id'] = current_run_id
-            json_data[current_run_id] = JSON_entry
-        
-            with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
-                json.dump(json_data, json_results_file, indent=4)  
+            print('GUESSING...', file_to_guess)
+            guessed_auhtor, XML_guessed, JSON_entry = guess_file(input_filename=file_to_guess, models_path=models_path)
 
-        if remove_original:
-            os.remove(os.path.join(input_path, file_to_guess))
-            print(f'\tOriginal file {file_to_guess} has been removed.')
+            # Save the results into a XML file
+            guessed_filename = f'guess_uuid_{str(time.time()).replace(".", "")}_{file_to_guess[:-4]}.xml'
+            with open(os.path.join(output_path, guessed_filename), 'w', encoding='utf-8') as guessed_file:
+                guessed_file.write(XML_guessed)
+                print('\tGuessed output saved as', guessed_filename)
+
+            # Save the results into JSON
+            JSON_filename = 'results.json'
+            JSON_entry['associated_XML'] = guessed_filename
+
+            if not os.path.exists(os.path.join(output_path, JSON_filename)):
+                evaluation_id = 0
+                with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
+                    json.dump({'last_run_id': evaluation_id, evaluation_id: JSON_entry}, json_results_file)
+            else:
+                with open(os.path.join(output_path, JSON_filename), 'r', encoding='utf-8') as json_results_file:
+                    json_data = json.load(json_results_file)
+                
+                last_run_id = json_data['last_run_id']
+                current_run_id = last_run_id+1
+                json_data['last_run_id'] = current_run_id
+                json_data[current_run_id] = JSON_entry
+            
+                with open(os.path.join(output_path, JSON_filename), 'w', encoding='utf-8') as json_results_file:
+                    json.dump(json_data, json_results_file, indent=4)  
+
+            if remove_original:
+                os.remove(os.path.join(input_path, file_to_guess))
+                print(f'\tOriginal file {file_to_guess} has been removed.')
 
 
 if __name__ == '__main__':
