@@ -11,8 +11,9 @@ from datetime import datetime
 import time
 import json
 import argparse
+import chardet
 
-version = '2.0.0'
+version = '2.0.1'
 authors = ['František Válek', 'Jan Hajič', 'Jiří Szromek', 'Martin Holub' 'Zdenko Vozár']
 project_name = 'DigiLab NK ČR'
 project_web = 'https://digilab.nkp.cz/'
@@ -330,9 +331,17 @@ def get_line_data(line_data:str):
 
 def process_input_file_with_UDPipe(input_filename:str):
     """ This function combines all of the functions above and process the input file into a XML-like string combining enriched data by both UDPipe and NameTag. """
-
-    with open(os.path.join(TEXT_TO_GUESS_PATH, input_filename), 'r', encoding='utf-8') as input_file:
-        input_string = input_file.read()
+    try:
+        with open(os.path.join(TEXT_TO_GUESS_PATH, input_filename), 'r', encoding='utf-8') as input_file:
+            input_string = input_file.read()
+    except UnicodeDecodeError:
+        with open(os.path.join(TEXT_TO_GUESS_PATH, input_filename), 'rb') as source_file:
+            raw_data = source_file.read()
+            encoding_result = chardet.detect(raw_data)
+            charenc = encoding_result['encoding']  
+            
+        with open(os.path.join(TEXT_TO_GUESS_PATH, input_filename), 'r', encoding=charenc) as input_file:
+            input_string = input_file.read()
 
     cleared_input = clear_document(input_string=input_string)
     connected_input = connect_lines(input_string=cleared_input)
@@ -554,14 +563,28 @@ def guess_all_files(input_path:str, output_path:str,  models_path:str, remove_or
     """ The main function that executes the guess all files in a given path. """
     files_to_guess = os.listdir(input_path)
 
-    # Test if there are any files over the limit of 18 000 characters (10 standard pages)
+    # Test if there are any files over the limit of 18 000 characters (10 standard pages) and texts treir encoding of other that UTF-8
+    print('Checking lengths and encodings...')
     for file_to_guess in files_to_guess:
-        with open(os.path.join(input_path, file_to_guess), 'r', encoding='utf-8') as input_file:
-            data_in_file = input_file.read()
-            len_of_input = len(data_in_file)
-            if len_of_input > 18000:
-                print(f'ERROR! File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters.')
-                return
+        try:
+            with open(os.path.join(input_path, file_to_guess), 'r', encoding='utf-8') as input_file:
+                data_in_file = input_file.read()
+                len_of_input = len(data_in_file)
+                if len_of_input > 18000:
+                    print(f'ERROR! File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters.')
+                    return
+        except UnicodeDecodeError:
+            with open(os.path.join(input_path, file_to_guess), 'rb') as source_file:
+                raw_data = source_file.read()
+                encoding_result = chardet.detect(raw_data)
+                charenc = encoding_result['encoding']  
+                
+            with open(os.path.join(input_path, file_to_guess), 'r', encoding=charenc) as input_file:
+                data_in_file = input_file.read()
+                len_of_input = len(data_in_file)
+                if len_of_input > 18000:
+                    print(f'ERROR! File {file_to_guess} has over 18 000 characters. Input must be below 18 000 characters.')
+                    return
 
     for file_to_guess in files_to_guess:
         print('GUESSING...', file_to_guess)
