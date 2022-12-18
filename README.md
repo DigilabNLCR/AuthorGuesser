@@ -30,7 +30,11 @@ author_to_id = {'A. Stašek': 'a-01',
 - Further concordances for dataset are available in [dataset_concordances.ipynb](https://github.com/DigilabNLCR/AuthorGuesser/tree/main/training/dataset_concordances.ipynb)
 
 ## How to use this script
-Gerenal info:
+
+### Requirements
+os, requests, joblib, re, datetime, time, json, argparse, chardet
+
+### Gerenal info:
 - You can either use default settings that works with these directories:
     - texts_to_guess
     - models
@@ -49,7 +53,7 @@ Gerenal info:
     - The higher the number of words, the higher probability of a right guess
 2) Run authorguesser.py
     - The script has been built in Python 3.9.
-    - requirements for python packages: os, requests, joblib, re, datetime, time, json, argparse
+    - requirements for python packages: os, requests, joblib, re, datetime, time, json, argparse, chardet
     - The script prepares the file (cleaning, connecting lines...) and delexicalize it (using UDPipe). The delexicalization in this case means: part-of-speech tags for autosemantic words (nouns (NOUN), proper nouns (PROPN), adjectives (ADJ), verbs (VERB), adverbs (ADV), and numbers (NUM)), other words are lemmatized.
     - Model is selected according to the segment length (in tokens), and applied.
 3) Check for the results
@@ -61,7 +65,7 @@ Gerenal info:
     - Result are also save in "guessed_files" direcotry, JSON file 'results.json'
         - only the basic info is presented in this file.
 
-## Training new models
+### Training new models
 - In the directory "training", you can find a script that facilitates trainning of the models
 - In addition to the scrip, you also need a dataset for training
 - to run the script, you need to provide following aguments:
