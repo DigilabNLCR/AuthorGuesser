@@ -106,3 +106,6 @@ _Realized with the support of institutional research of National Library of the 
 Národní knihovna České Republiky
 
 _Realizováno v rámci institucionálního výzkumu Národní knihovny České republiky financovaného Ministerstvem kultury ČR v rámci Dlouhodobého koncepčního rozvoje výzkumné organizace._
+
+# Updates
+- 13th August 2024: updates on model selection process.
