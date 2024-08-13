@@ -32,8 +32,8 @@ author_to_id = {'A. Stašek': 'a-01',
 ## How to use this script
 
 ### Requirements
-os, requests, joblib, re, datetime, time, json, argparse, chardet
-
+See [requirements.txt](https://github.com/DigilabNLCR/AuthorGuesser/tree/main/requirements.txt)
+Essential libraries: os, requests, joblib, re, datetime, time, json, argparse, chardet, scikit-learn
 ### Gerenal info:
 - You can either use default settings that works with these directories:
     - texts_to_guess

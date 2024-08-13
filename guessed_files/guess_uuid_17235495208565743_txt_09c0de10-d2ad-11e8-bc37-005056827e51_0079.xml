@@ -3,7 +3,7 @@
 	<guessed_author_ID>a-08</guessed_author_ID>
 	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0079.txt</original_filename>
 	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
-	<date>2022-11-29</date>
+	<date>2024-08-13</date>
 </info>
 <s>
 		<token>POS_VERB</token>
@@ -190,14 +190,14 @@
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 		<token>POS_ADV</token>
-		<token>POS_ADV</token>
+		<token>jakoby</token>
 		<token>z</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 </s>
 <s>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
+		<token>Knigoizdatělstva“</token>
 		<token>se</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>

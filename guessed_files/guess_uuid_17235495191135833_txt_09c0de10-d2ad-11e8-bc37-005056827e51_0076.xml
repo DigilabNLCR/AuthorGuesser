@@ -3,7 +3,7 @@
 	<guessed_author_ID>a-08</guessed_author_ID>
 	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0076.txt</original_filename>
 	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
-	<date>2022-11-29</date>
+	<date>2024-08-13</date>
 </info>
 <s>
 		<token>POS_NOUN</token>
@@ -49,6 +49,8 @@
 		<token>u</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>POS_VERB</token>
 		<token>být</token>
@@ -60,6 +62,8 @@
 		<token>POS_ADV</token>
 		<token>být</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>msd="</token>
 		<token>POS_ADV</token>
@@ -72,6 +76,8 @@
 		<token>o</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>msd="</token>
 		<token>až</token>
@@ -79,11 +85,15 @@
 		<token>k</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>msd="</token>
 		<token>POS_ADV</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>POS_VERB</token>
 		<token>být</token>
@@ -98,7 +108,7 @@
 		<token>on</token>
 		<token>takový</token>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
+		<token>usus</token>
 		<token>msd="</token>
 </s>
 <s>
@@ -109,7 +119,7 @@
 		<token>msd="</token>
 </s>
 <s>
-		<token>mnoz</token>
+		<token>mnohý</token>
 		<token>prý</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
@@ -131,7 +141,7 @@
 </s>
 <s>
 		<token>POS_ADJ</token>
-		<token>POS_ADV</token>
+		<token>tedy</token>
 		<token>msd="</token>
 </s>
 <s>
@@ -222,7 +232,7 @@
 		<token>být</token>
 		<token>msd="</token>
 		<token>a</token>
-		<token>POS_ADV</token>
+		<token>snad</token>
 		<token>ten</token>
 		<token>být</token>
 		<token>POS_ADV</token>
@@ -317,7 +327,7 @@
 		<token>msd="</token>
 		<token>POS_ADJ</token>
 		<token>POS_NUM</token>
-		<token>POS_NOUN</token>
+		<token>sto</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 </s>

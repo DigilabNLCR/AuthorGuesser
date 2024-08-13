@@ -3,7 +3,7 @@
 	<guessed_author_ID>a-08</guessed_author_ID>
 	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0074.txt</original_filename>
 	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
-	<date>2022-11-29</date>
+	<date>2024-08-13</date>
 </info>
 <s>
 		<token>POS_ADV</token>
@@ -28,14 +28,14 @@
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 		<token>POS_VERB</token>
-		<token>izvosčik</token>
+		<token>POS_NOUN</token>
 		<token>msd="</token>
 </s>
 <s>
 		<token>POS_VERB</token>
 		<token>POS_NOUN</token>
 		<token>za</token>
-		<token>POS_NOUN</token>
+		<token>POS_NUM</token>
 		<token>POS_NOUN</token>
 		<token>já</token>
 		<token>POS_VERB</token>
@@ -46,7 +46,7 @@
 		<token>POS_VERB</token>
 		<token>já</token>
 		<token>POS_NOUN</token>
-		<token>POS_ADV</token>
+		<token>POS_NOUN</token>
 		<token>msd="</token>
 		<token>takže</token>
 		<token>být</token>
@@ -80,7 +80,7 @@
 		<token>v</token>
 		<token>samý</token>
 		<token>POS_NOUN</token>
-		<token>můj</token>
+		<token>náš</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 </s>
@@ -116,7 +116,7 @@
 		<token>být</token>
 		<token>on</token>
 		<token>POS_VERB</token>
-		<token>POS_ADV</token>
+		<token>snad</token>
 		<token>i</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
@@ -157,7 +157,7 @@
 		<token>POS_VERB</token>
 		<token>být</token>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
+		<token>klíč</token>
 		<token>к</token>
 		<token>POS_NOUN</token>
 		<token>POS_NOUN</token>
@@ -188,11 +188,13 @@
 </s>
 <s>
 		<token>msd="</token>
-		<token>POS_ADJ</token>
-		<token>POS_NOUN</token>
+		<token>Borovaja</token>
+		<token>ulica</token>
 		<token>POS_NUM</token>
 		<token>msd="</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>a</token>
 		<token>POS_ADJ</token>
 		<token>POS_NOUN</token>
@@ -246,7 +248,7 @@
 		<token>se</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
-		<token>ačkoliv</token>
+		<token>ačkoli</token>
 		<token>se</token>
 		<token>já</token>
 		<token>POS_VERB</token>
@@ -262,8 +264,7 @@
 </s>
 <s>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
-		<token>msd="</token>
+		<token>požalujsta</token>
 		<token>msd="</token>
 		<token>POS_VERB</token>
 		<token>se</token>
@@ -275,7 +276,7 @@
 		<token>být</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
-		<token>POS_ADV</token>
+		<token>snad</token>
 		<token>POS_NUM</token>
 		<token>POS_ADJ</token>
 		<token>msd="</token>
@@ -295,7 +296,7 @@
 		<token>POS_VERB</token>
 		<token>msd="</token>
 		<token>POS_NOUN</token>
-		<token>POS_NOUN</token>
+		<token>к</token>
 		<token>jeho</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
@@ -303,7 +304,7 @@
 <s>
 		<token>tento</token>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
+		<token>Klíčem“</token>
 		<token>POS_ADJ</token>
 		<token>POS_VERB</token>
 		<token>u</token>
@@ -311,7 +312,7 @@
 		<token>POS_ADJ</token>
 		<token>msd="</token>
 		<token>msd="</token>
-		<token>soést</token>
+		<token>POS_VERB</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
 		<token>který</token>

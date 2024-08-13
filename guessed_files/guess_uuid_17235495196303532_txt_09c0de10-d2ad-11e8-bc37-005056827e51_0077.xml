@@ -3,7 +3,7 @@
 	<guessed_author_ID>a-08</guessed_author_ID>
 	<original_filename>txt_09c0de10-d2ad-11e8-bc37-005056827e51_0077.txt</original_filename>
 	<model_used>r-08.s-200.n-1,3.m-LinearSVC.c-.joblib</model_used>
-	<date>2022-11-29</date>
+	<date>2024-08-13</date>
 </info>
 <s>
 		<token>POS_NOUN</token>
@@ -28,12 +28,14 @@
 		<token>až</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
+</s>
+<s>
 		<token>msd="</token>
 		<token>POS_VERB</token>
 		<token>POS_NOUN</token>
 		<token>POS_ADJ</token>
 		<token>on</token>
-		<token>POS_NOUN</token>
+		<token>POS_ADV</token>
 		<token>POS_ADV</token>
 		<token>msd="</token>
 		<token>což</token>
@@ -66,9 +68,9 @@
 		<token>se</token>
 		<token>msd="</token>
 		<token>msd="</token>
-		<token>Klnul</token>
+		<token>POS_VERB</token>
 		<token>jako</token>
-		<token>POS_NOUN</token>
+		<token>izvosčik“</token>
 		<token>msd="</token>
 		<token>což</token>
 		<token>POS_VERB</token>
@@ -78,7 +80,7 @@
 		<token>když</token>
 		<token>se</token>
 		<token>u</token>
-		<token>já</token>
+		<token>my</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>
 		<token>msd="</token>
@@ -112,7 +114,7 @@
 		<token>msd="</token>
 </s>
 <s>
-		<token>POS_ADV</token>
+		<token>snad</token>
 		<token>se</token>
 		<token>on</token>
 		<token>POS_VERB</token>
@@ -143,8 +145,8 @@
 		<token>ovšem</token>
 		<token>msd="</token>
 		<token>msd="</token>
-		<token>POS_NOUN</token>
-		<token>POS_NOUN</token>
+		<token>spici</token>
+		<token>izvosčik</token>
 		<token>být</token>
 		<token>na</token>
 		<token>POS_NOUN</token>
@@ -231,7 +233,7 @@
 		<token>msd="</token>
 </s>
 <s>
-		<token>jak</token>
+		<token>POS_NOUN</token>
 		<token>prý</token>
 		<token>ten</token>
 		<token>být</token>
@@ -297,12 +299,10 @@
 		<token>POS_VERB</token>
 		<token>POS_NOUN</token>
 		<token>msd="</token>
-</s>
-<s>
 		<token>msd="</token>
 		<token>msd="</token>
 		<token>msd="</token>
-		<token>Deputant</token>
+		<token>POS_NOUN</token>
 		<token>se</token>
 		<token>POS_VERB</token>
 		<token>msd="</token>

@@ -500,25 +500,27 @@ def guess_instance(model_filename:str, data_to_eval:str):
 
 def select_model_file(list_of_models:list, s:int):
     """ This function selects the best of suggested models according to segment length of the input. """
+    list_of_models.sort()
+    
     if s >= 990:
         for model in list_of_models:
-            if 's-1000.' in model:
+            if 's-1000.' in model and model.startswith('r-'):
                 return model
     elif s >= 490:
         for model in list_of_models:
-            if 's-500.' in model:
+            if 's-500.' in model and model.startswith('r-'):
                 return model
     elif s >= 195:
         for model in list_of_models:
-            if 's-200.' in model:
+            if 's-200.' in model and model.startswith('r-'):
                 return model
     elif s >= 95:
         for model in list_of_models:
-            if 's-100.' in model:
+            if 's-100.' in model and model.startswith('r-'):
                 return model
     else:
         for model in list_of_models:
-            if 's-50.' in model:
+            if 's-50.' in model and model.startswith('r-'):
                 return model
 
 
